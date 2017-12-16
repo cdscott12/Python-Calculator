@@ -15,9 +15,19 @@ def divide(num1, num2):
     return num1 / num2
 
 def main():
-    print(add(1,1)) #2
-    print(subtract(3,2)) #1
-    print(multiply(7, 5)) #35
-    print(divide(90 ,2)) #45
+   num1 = int(input("What is num1?"))
+   num2 = int(input("What is num2?'"))
+   operation = input("What do you want to do?(add, subtract, multiply, or divide)")
+   if(operation == 'add'):
+         print(add(num1, num2))
+   elif(operation == 'subtract'):
+        print(subtract(num1, num2))
+   elif(operation == 'multiply'):
+         print(multiply(num1, num2))
+   elif(operation == 'divide'):
+         print(divide(num1, num2))
+   else:
+       print("I don't understand :[")
+
 
 main()
